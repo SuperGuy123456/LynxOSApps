@@ -41,9 +41,10 @@ For those using the ESP32-2432S028R, you can simply download the `.ino` file, fl
 ```cpp
 const char* binURL = "https://yourdomain.com/firmware/appname.bin";
 downloadToSD(binURL, "/update.bin");
-flashFromSD("/update.bin");```
+flashFromSD("/update.bin");
+```
 
-## License
+## 🧑‍⚖️ License
 
 **This project is protected by the Creative Commons Attribution-NonCommercial 4.0 International License**
 
