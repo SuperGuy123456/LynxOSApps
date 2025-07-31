@@ -1,4 +1,5 @@
 # 🦊 LynxOS
+*© 2025 Manomay*
 
 ## 📖 About the Project
 
