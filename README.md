@@ -1,5 +1,5 @@
 # 🦊 LynxOS
-*© 2025 Manomay*
+*© 2025 Manomay Tyagi*
 
 ## 📖 About the Project
 
@@ -49,5 +49,5 @@ flashFromSD("/update.bin");
 
 **This project is protected by the Creative Commons Attribution-NonCommercial 4.0 International License**
 
-*© 2025 Manomay*
+*© 2025 Manomay Tyagi*
 ____
