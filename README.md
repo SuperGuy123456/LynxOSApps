@@ -11,7 +11,7 @@ Each `.bin` file follows a generic structure that includes a function to reflash
 
 Unless you own an **ESP32-2432S028R** with the exact same pin configuration required by this project, you'll need to download the `.ino` file and modify the pin assignments and possibly the libraries.
 
-For those using the ESP32-2432S028R, you can simply download the `.ino` file, flash it to your ESP32, and place the OS `.bin` file onto the microSD card.
+For those using the **ESP32-2432S028R**, you can simply download the `.ino` file, flash it to your ESP32, and place the OS `.bin` file onto the microSD card.
 
 ## 📌 Features
 
@@ -20,12 +20,12 @@ For those using the ESP32-2432S028R, you can simply download the `.ino` file, fl
 - Displays available files via touchscreen interface  
 - Reads and flashes the selected binary from the SD card  
 - Automatically reboots into the new firmware  
-- Optional version tracking via JSON  
+- Optional version tracking via `JSON`  
 
 ## 🧰 Requirements
 
-- ESP32-2432S028R ("Cheap Yellow Display")  
-- MicroSD card formatted as FAT32 (recommended size < 16GB)  
+- **ESP32-2432S028R** ("Cheap Yellow Display")  
+- MicroSD card formatted as `FAT32` (recommended size < 16GB)  
 - Wi-Fi access  
 - `.bin` files hosted online  
 
