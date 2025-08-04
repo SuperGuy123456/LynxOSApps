@@ -1,4 +1,1 @@
-https://raw.githubusercontent.com/SuperGuy123456/LynxOSApps/main/Alpha/hello.bin#HelloWorld#/hello.bin
-
-Although the Alpha version does not use this file, it is here for the sake of unifying the beta architecture. Again, this file is only for the Beta version and helps with downloading the hello.bin file
-
+https://raw.githubusercontent.com/SuperGuy123456/LynxOSApps/main/Alpha/hello.bin#HelloWorld#/hello.bin!
