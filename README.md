@@ -5,7 +5,7 @@
 
 **LynxOS** is essentially a bootloader for the ESP32 that can download `.bin` files from the web (like those hosted in this repo) and store them on a microSD card. Using a touchscreen interface, it displays the available files, allowing the user to select one to flash.
 
-Each `.bin` file follows a generic structure that includes a function to reflash the core OS — a protected `.bin` file that cannot be removed. This project is actively developed and tested on the **ESP32-2432S028R** (commonly known as the "Cheap Yellow Display"), but it should work on any ESP32 with proper configuration.
+Each `.bin` file follows a generic structure that includes a function to reflash the core OS — a protected `.bin` file that cannot be removed. This project is actively developed and tested on the **ESP32-2432S028R** (commonly known as the "Cheap Yellow Display"), but it should work on any ESP32 with proper configuration. To view specific features of the specific versions, please go to the `Readme.md` file in each folder and see the summary as well as what to expect.
 
 ## 🚀 Trying It Out
 
