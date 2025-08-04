@@ -1,4 +1,4 @@
-# 🚀 ESP32 Touchscreen Firmware Loader (Alpha)
+# 🚀 LynxOS (Alpha) v1
 
 This is the **Alpha release** of a modular ESP32 firmware loader featuring a touchscreen interface, SD card access, and OTA update support. Built for experimentation, debugging, and refinement.
 
