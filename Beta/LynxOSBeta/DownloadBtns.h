@@ -1,36 +1,43 @@
-#ifndef DOWNLOADBTNS_H
-#define DOWNLOADBTNS_H
-
+#pragma once
 #include "SetupProgram.h"
 #include "WIFIFunc.h"
-#include <vector>
 
-
-struct Entry {
-    String url;
-    String displayName;
-    String downloadName;
-    bool isOS;
-};
-
-
-class DownloadBtns
-{
-  public:
+class DownloadBtns {
+public:
     DownloadBtns();
-    static std::vector<Entry> parseManifest(const String& content);
 
-    void begin(TFT_eSPI* _tft, fs::FS* _sd);
-    void downloadTxtAndParse(String path, String downloadname);
-    void displayOptions(); // just draws the items on teh screen leaves actually figuiring out what to do to the handleInput
-    void handleInput(); //Uses the bool to figure out whether to run the display options again with the new set of items or to ask the user to save and flash, just flash or just save
+    void begin(TFT_eSPI* _tft, WIFIFunc* wifi, fs::FS* sd);
+    void update();
+    bool touch(uint16_t x, uint16_t y);
 
-  private:
+private:
     TFT_eSPI* tft;
+    WIFIFunc* wifi;
     fs::FS* sd;
-    bool page = false; //0 = displaying version selector (do not flash file because it is just a txt), 1 = displaying actual bin files (do ask flash if user wants)
-    std::vector<Entry> Entries; // holds teh entries so that the display options can show the name and the url and download things for the handle input
 
+    struct VPathEntry {
+        String displayName;
+        String vpathUrl;
+        String localPath;
+    };
+
+    struct BinEntry {
+        String displayName;
+        String vpathUrl;
+        String localPath;
+    };
+
+    std::vector<VPathEntry> vpathEntries;
+    std::vector<BinEntry> binEntries;
+
+    bool showingBinOptions = false;
+    int selectedVPathIndex = -1;
+
+    void downloadBinPaths();
+    void parseBinPaths(const String& content);
+    void downloadVPathFiles();
+    void parseVPathFile(const String& content);
+    void displayVPathButtons();
+    void displayBinOptions();
+    void drawCenteredText(const String& text, int y);
 };
-
-#endif
