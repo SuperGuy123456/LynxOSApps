@@ -107,7 +107,7 @@ void DownloadBtns::displayVPathButtons() {
 bool DownloadBtns::touch(uint16_t x, uint16_t y) {
     int itemHeight = 30;
     int index = y / itemHeight;
-
+    bool justpressed = false;
     if (!showingBinOptions) {
         if (index >= 0 && index < vpathEntries.size()) {
             selectedVPathIndex = index;
@@ -123,10 +123,12 @@ bool DownloadBtns::touch(uint16_t x, uint16_t y) {
 
             parseVPathFile(content);
             displayBinOptions();
+            justpressed = true;
+            delay(1000);
             return false;
         }
     } else {
-        if (index >= 0 && index < binEntries.size()) {
+        if (index >= 0 && index < binEntries.size() and justpressed == false) {
             drawCenteredText("Downloading " + binEntries[index].displayName, 100);
             wifi->downloadBinToSD(binEntries[index].vpathUrl.c_str(), binEntries[index].localPath.c_str());
             return true;
