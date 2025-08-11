@@ -1,7 +1,7 @@
 # 🚀 LynxOS (Beta) v2
 This is the Beta release of LynxOS—an ESP32 firmware loader featuring refined touchscreen controls, SD card scanning, OTA update support, and a startup selector. Built for smoother UX and scalable embedded workflows.
 
-__
+___
 
 ## ✨ Beta Features
 
@@ -16,7 +16,7 @@ Manual chip-select toggling for SD and touch components prevents bus conflicts.
 - 🔧 Modular System Structure
 Encapsulated logic across setup, Wi-Fi, downloader, and boot menu classes.
 
-__
+___
 
 ## ⚙️ How It Works
 
@@ -33,7 +33,7 @@ __
 - Touch and SD share SPI bus—CS toggling avoids contention.
 - Peripherals are initialized cleanly based on selected mode.
   
-__
+___
 
 ## 🧭 Notes
 
