@@ -1,2 +1,2 @@
-https://raw.githubusercontent.com/SuperGuy123456/LynxOSApps/main/Alpha/v1paths.txt#Alpha_Paths#v1paths.txt#false!
-https://raw.githubusercontent.com/SuperGuy123456/LynxOSApps/main/Beta/v2paths.txt#Beta_Paths#v2paths.txt#false!
+https://raw.githubusercontent.com/SuperGuy123456/MTOSApps/main/Alpha/v1paths.txt#Alpha_Paths#v1paths.txt#false!
+https://raw.githubusercontent.com/SuperGuy123456/MTOSApps/main/Beta/v2paths.txt#Beta_Paths#v2paths.txt#false!
