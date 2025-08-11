@@ -16,7 +16,7 @@ void DownloadBtns::begin(TFT_eSPI* _tft, WIFIFunc* wifiPtr, fs::FS* sdPtr) {
 }
 
 void DownloadBtns::downloadBinPaths() {
-    const char* url = "https://raw.githubusercontent.com/SuperGuy123456/LynxOSApps/main/binpaths.txt";
+    const char* url = "https://raw.githubusercontent.com/SuperGuy123456/MTApps/main/binpaths.txt";
     const char* localPath = "/binpaths.txt";
 
     if (!wifi->downloadBinToSD(url, localPath)) {
