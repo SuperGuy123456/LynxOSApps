@@ -29,7 +29,7 @@ void setup() {
     systemSetup.switchCS(true);
     wifi.connectToWiFi("JaiGanesha2.4", "2202@Home", &SD, &systemSetup.tft);
 
-    const char* url = "https://raw.githubusercontent.com/SuperGuy123456/LynxOSApps/main/Alpha/hello.bin";
+    const char* url = "https://raw.githubusercontent.com/SuperGuy123456/MTOSApps/main/Alpha/hello.bin";
     const char* localPath = "/hi.bin";
 
     wifi.downloadBinToSD(url, localPath);
