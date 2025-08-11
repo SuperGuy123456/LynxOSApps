@@ -1,1 +1,2 @@
-https://raw.githubusercontent.com/SuperGuy123456/LynxOSApps/main/Beta/hello.bin#HelloWorld#/hello.bin#false!
+https://raw.githubusercontent.com/SuperGuy123456/LynxOSApps/main/Beta/hello.bin#Hello_World#/hello.bin#false!
+https://raw.githubusercontent.com/SuperGuy123456/LynxOSApps/main/Beta/helloV2.bin#Hello_World_V2#/hellov2.bin#false!
