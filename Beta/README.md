@@ -1,10 +1,10 @@
 # 🚀 LynxOS (Beta) v2
-__
 This is the Beta release of LynxOS—an ESP32 firmware loader featuring refined touchscreen controls, SD card scanning, OTA update support, and a startup selector. Built for smoother UX and scalable embedded workflows.
+
 __
 
 ## ✨ Beta Features
-__
+
 - 📁 SD Card Firmware Scanning
 Automatically detects .bin files and presents them in a boot menu for direct flashing.
 - 🖱️ Touchscreen Multi-Button UI
@@ -15,9 +15,11 @@ Loads firmware over-the-air from pre-defined URLs stored on SD and flashes it se
 Manual chip-select toggling for SD and touch components prevents bus conflicts.
 - 🔧 Modular System Structure
 Encapsulated logic across setup, Wi-Fi, downloader, and boot menu classes.
+
 __
+
 ## ⚙️ How It Works
-__
+
 - Startup Selection
 - Two touchscreen buttons: Wi-Fi Download and Boot Menu.
 - Touch detection maps raw input to screen coordinates and debounces interaction.
@@ -30,9 +32,11 @@ __
 - Touch Input & SPI Handling
 - Touch and SD share SPI bus—CS toggling avoids contention.
 - Peripherals are initialized cleanly based on selected mode.
+  
 __
+
 ## 🧭 Notes
-__
+
 - switchPartition() has been removed in this version.
 - OTA paths must be defined in the vpaths files on the SD card.
 - This version is reliable for day-to-day flashing and update cycles.
